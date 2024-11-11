@@ -1,0 +1,84 @@
+/* Importando fonte Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#ECEFFE, #CED6FB);
+}
+.card-list .card-item .card-link {
+width: 400px;
+display: block;
+background: #fff;
+padding: 18px;
+border-radius: 12px;
+text-decoration: none;
+border: 2px solid transparent;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+transition: 0.2s ease;
+}
+.card-list .card-item .card-link {
+ border-color: #5372f0;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-list .card-link .badge{
+ color: #5372f0;
+ padding: 8px 16px;
+ font-size: 0.95rem;
+ font-weight: 500;
+ margin: 16px 0 18px;
+ background: #DDE4FF;
+ width: fit-content;
+ border-radius: 50px;
+}
+.card-list .card-link .badge.Card1{
+color: #B22485;
+background: #F7DFF5;
+}
+.card-list .card-link .badge.Card2{
+  color: #B25A2B;
+background: #FFE3D2;
+}
+.card-list .card-link .badge.Card3{
+  color: #205C20;
+  background: #D6F3D6;
+}
+.card-list .card-link .badge.Card4{
+  color: #856404;
+background: #fff3cd;
+}
+.card-list .card-link .card-title {
+  font-size: 1.19rem;
+  color: #000;
+  font-weight: 600;
+}
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  color: #5372f0;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #5372f0;
+  transform: rotate(-45deg);
+  transition: 0.4 ease;
+}
+.card-list .card-link .card-button {
+  color: #fff;
+  background: #5372f0;
+
+}
