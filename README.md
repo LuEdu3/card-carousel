@@ -2,6 +2,9 @@
 
 Fiz esse exemplo de card estilo carousel usando de exemplo esse [vídeo](https://www.youtube.com/watch?v=VUtJ7FWCfZA) e o [ChatGPT](chat.com) pois os exemplos do vídeo não estavam atuais.
 
+Site com botões interativos, os botões azuis embaio também são interativos.
+
+
 ![alt text](Cards-1.png) 
 
 ![alt text](chrome-capture-2024-11-13-1.gif)
