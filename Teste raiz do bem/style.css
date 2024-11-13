@@ -1,4 +1,4 @@
-/* Importando fonte Inter */
+/* Importing Inter font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
 
 * {
@@ -6,65 +6,91 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background: linear-gradient(#ECEFFE, #CED6FB);
-}
-.card-list .card-item .card-link {
-width: 400px;
-display: block;
-background: #fff;
-padding: 18px;
-border-radius: 12px;
-text-decoration: none;
-border: 2px solid transparent;
-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-transition: 0.2s ease;
-}
-.card-list .card-item .card-link {
- border-color: #5372f0;
+  font-family: 'Inter', sans-serif;
 }
 
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  user-select: none;
+  display: block;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card-list .card-item .card-link {
+  border-color: #5372f0;
+}
+
+/* Image styling */
 .card-list .card-link .card-image {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 10px;
 }
-.card-list .card-link .badge{
- color: #5372f0;
- padding: 8px 16px;
- font-size: 0.95rem;
- font-weight: 500;
- margin: 16px 0 18px;
- background: #DDE4FF;
- width: fit-content;
- border-radius: 50px;
+
+/* Badge styling */
+.card-list .card-link .badge {
+  color: #5372f0;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  background: #DDE4FF;
+  width: fit-content;
+  border-radius: 50px;
 }
-.card-list .card-link .badge.Card1{
-color: #B22485;
-background: #F7DFF5;
+
+.card-list .card-link .badge.alfa {
+  color: #B22485;
+  background: #F7DFF5;
 }
-.card-list .card-link .badge.Card2{
+
+.card-list .card-link .badge.beta {
   color: #B25A2B;
-background: #FFE3D2;
+  background: #FFE3D2;
 }
-.card-list .card-link .badge.Card3{
+
+.card-list .card-link .badge.gama {
   color: #205C20;
   background: #D6F3D6;
 }
-.card-list .card-link .badge.Card4{
+
+.card-list .card-link .badge.delta {
   color: #856404;
-background: #fff3cd;
+  background: #fff3cd;
 }
+
+/* Title styling */
 .card-list .card-link .card-title {
-  font-size: 1.19rem;
+  font-size: 1.2rem; /* Set a flexible font size */
   color: #000;
   font-weight: 600;
 }
+
+/* Button styling */
 .card-list .card-link .card-button {
   height: 35px;
   width: 35px;
@@ -75,10 +101,61 @@ background: #fff3cd;
   cursor: pointer;
   border: 2px solid #5372f0;
   transform: rotate(-45deg);
-  transition: 0.4 ease;
+  transition: 0.4s ease; /* Smooth button hover effect */
 }
-.card-list .card-link .card-button {
+
+.card-list .card-link:hover .card-button {
   color: #fff;
   background: #5372f0;
+}
 
+/* Card hover effect */
+.card-list .card-link:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow on hover */
+}
+
+/* Media Queries for Responsiveness */
+
+/* For small devices (mobile-first approach) */
+@media (max-width: 768px) {
+  .card-wrapper {
+    margin: 0 30px 20px;
+  }
+
+  .card-list .card-item .card-link {
+    padding: 15px;
+  }
+
+  .card-list .card-item .card-title {
+    font-size: 1rem; /* Smaller title for smaller screens */
+  }
+
+  .card-list .card-link .badge {
+    font-size: 0.9rem; /* Smaller badge for small screens */
+  }
+}
+
+/* For very small devices (phones in portrait mode) */
+@media (max-width: 480px) {
+  .card-wrapper {
+    margin: 0 15px;
+  }
+
+  .card-list .card-item .card-link {
+    padding: 12px;
+  }
+
+  .card-list .card-item .card-title {
+    font-size: 0.9rem; /* Further reduce title size */
+  }
+
+  .card-list .card-link .badge {
+    font-size: 0.85rem; /* Smaller badge text */
+  }
+
+  .card-list .card-button {
+    height: 30px;
+    width: 30px; /* Smaller button size */
+  }
 }
